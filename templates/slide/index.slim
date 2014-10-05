@@ -1,0 +1,40 @@
+doctype html
+
+html
+  head
+    meta charset="utf-8"
+
+    title
+
+    meta name="description" content=""
+    meta name="author" content=""
+
+    link rel="stylesheet" href="vendor/reveal.js/css/reveal.css"
+    link rel="stylesheet" href="vendor/reveal.js/css/theme/simple.css"
+
+  body
+    div.reveal
+      div.slides
+        = yield
+
+    script src="js/head.min.js"
+    script src="js/reveal.js"
+
+    javascript:
+      Reveal.initialize({
+        controls: false,
+        progress: false,
+        history: true,
+        center: true,
+        rollingLinks: true,
+        transition: 'linear',
+        backgroundTransition: 'none',
+        dependencies: [
+          {
+            src: 'js/highlight.js',
+            async: true,
+            callback: function() {
+              hljs.initHighlightingOnLoad();
+            }
+          }
+        ]
