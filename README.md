@@ -1,7 +1,7 @@
 # Hack
 
-The, slightly opinionated, yet friendly [Hack Bulgaria] boilerplate assistant.
-Still in infant stage.
+The slightly opinionated, yet super friendly, boilerplate assistant for [Hack
+Bulgaria][].  Still in infant stage.
 
 ## Contributing
 
@@ -10,3 +10,5 @@ Still in infant stage.
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
+[Hack Bulgaria]: https://hackbulgaria.com
