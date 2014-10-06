@@ -17,6 +17,14 @@ module Hack
       copy_file "templates/slide/css/simple.css", "#{name}/css/simple.css"
     end
 
+    def copy_stylesheets
+      copy_file "templates/slide/css/fonts/Fixedsys500c.eot", "#{name}/css/fonts/Fixedsys500c.eot"
+      copy_file "templates/slide/css/fonts/Fixedsys500c.otf", "#{name}/css/fonts/Fixedsys500c.otf"
+      copy_file "templates/slide/css/fonts/Fixedsys500c.svg", "#{name}/css/fonts/Fixedsys500c.svg"
+      copy_file "templates/slide/css/fonts/Fixedsys500c.ttf", "#{name}/css/fonts/Fixedsys500c.ttf"
+      copy_file "templates/slide/css/fonts/Fixedsys500c.woff", "#{name}/css/fonts/Fixedsys500c.woff"
+    end
+
     def copy_javascripts
       copy_file "templates/slide/js/head.min.js", "#{name}/js/head.min.js"
       copy_file "templates/slide/js/highlight.js", "#{name}/js/highlight.js"
