@@ -9,25 +9,29 @@ html
     meta name="description" content=""
     meta name="author" content=""
 
-    link rel="stylesheet" href="vendor/reveal.js/css/reveal.css"
-    link rel="stylesheet" href="vendor/reveal.js/css/theme/simple.css"
+    link rel="stylesheet" href="css/reveal.css"
+    link rel="stylesheet" href="css/simple.css"
 
   body
     div.reveal
       div.slides
-        = yield
+        == yield
 
     script src="js/head.min.js"
     script src="js/reveal.js"
 
     javascript:
       Reveal.initialize({
+        width:  '100%',
+        height: '100%',
+        margin: 0.05,
         controls: false,
         progress: false,
         history: true,
-        center: true,
+
+        center: false,
         rollingLinks: true,
-        transition: 'linear',
+        transition: 'none',
         backgroundTransition: 'none',
         dependencies: [
           {
@@ -38,3 +42,4 @@ html
             }
           }
         ]
+      });

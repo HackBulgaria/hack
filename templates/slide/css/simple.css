@@ -1,5 +1,12 @@
-@import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'DOS';
+  src: url('fonts/Fixedsys500c.eot');
+  src: local('☺'), url('fonts/Fixedsys500c.woff') format('woff'), url('fonts/Fixedsys500c.ttf') format('truetype'), url('fonts/Fixedsys500c.svg') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
 /**
  * A simple theme for reveal.js presentations, similar
  * to the default theme. The accent color is darkblue.
@@ -15,9 +22,10 @@ body {
   background-color: white; }
 
 .reveal {
-  font-family: "Lato", sans-serif;
+  font-family: DOS, Monaco, Menlo, Consolas, "Courier New", monospace;
   font-size: 36px;
   font-weight: normal;
+  -webkit-font-smoothing: none;
   letter-spacing: -0.02em;
   color: black; }
 
@@ -37,14 +45,40 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: black;
-  font-family: "News Cycle", Impact, sans-serif;
+  font-family: DOS, Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-weight: normal;
+  -webkit-font-smoothing: none;
   line-height: 0.9em;
   letter-spacing: 0.02em;
   text-transform: none;
   text-shadow: none; }
 
 .reveal h1 {
-  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }
+  font-size: 2.2em; }
+
+.reveal h2 {
+  font-size: 1.9em; }
+
+.reveal h3 {
+  font-size: 1.8em; }
+
+.reveal h4 {
+  font-size: 1.5em; }
+
+.reveal h5 {
+  font-size: 1.2em; }
+
+/*********************************************
+ * LISTS
+ *********************************************/
+
+.reveal ul {
+ list-style-type: none;
+ padding: 0px;
+ margin: 0px; }
+
+.reveal li {
+  list-decoration: none !important; }
 
 /*********************************************
  * LINKS
@@ -136,3 +170,24 @@ body {
  *********************************************/
 .reveal .slide-number {
   color: darkblue; }
+ 
+/*********************************************
+ * MISC
+ *********************************************/
+.reveal .white {
+  color: #FFFFFF; }
+
+.reveal .big {
+  font-size: 1.9em; }
+
+.reveal pre.inline {
+  box-shadow: none; }
+
+.reveal img.inline {
+  background: transparent; border: 0; box-shadow: none; margin: 0; vertical-align: middle; }
+
+.reveal a.image {
+  text-decoration: none; }
+
+.reveal a:hover img.inline {
+  background: transparent; border: 0; box-shadow: none; }
