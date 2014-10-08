@@ -11,6 +11,7 @@ html
 
     link rel="stylesheet" href="css/reveal.css"
     link rel="stylesheet" href="css/simple.css"
+    link rel="stylesheet" href="css/googlecode.css"
 
   body
     div.reveal
@@ -28,7 +29,6 @@ html
         controls: false,
         progress: false,
         history: true,
-
         center: false,
         rollingLinks: true,
         transition: 'none',
@@ -38,6 +38,7 @@ html
             src: 'js/highlight.js',
             async: true,
             callback: function() {
+              hljs.configure({ languages: ['ruby'] });
               hljs.initHighlightingOnLoad();
             }
           }

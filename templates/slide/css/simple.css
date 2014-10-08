@@ -170,7 +170,19 @@ body {
  *********************************************/
 .reveal .slide-number {
   color: darkblue; }
- 
+
+/*********************************************
+ * CODE
+ *********************************************/
+.reveal pre {
+  font-family: DOS, Monaco, Menlo, Consolas, "Courier New", monospace;
+  box-shadow: none !important;
+}
+
+.reveal code {
+  font-family: DOS, Monaco, Menlo, Consolas, "Courier New", monospace;
+}
+
 /*********************************************
  * MISC
  *********************************************/
