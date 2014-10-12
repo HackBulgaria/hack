@@ -9,7 +9,7 @@ module Hack
 
     def copy_solution_and_test
       copy_file "solution.rb", "#{name}/solution.rb"
-      copy_file "test_solution.rb", "#{name}/test_solution.rb"
+      copy_file "solution_test.rb", "#{name}/solution_test.rb"
     end
 
     def copy_rubocop_config
