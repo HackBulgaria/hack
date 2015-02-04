@@ -1,9 +1,22 @@
+require_relative 'usage'
+
 module Hack
   class Application < Thor
-    def self.define_command(name, desc)
-      require_relative "commands/#{name}_command"
+    class << self
+      def start(*)
+        usage = Usage.new
+        usage.show
 
-      register Hack.const_get("#{name.capitalize}Command"), name, name, desc
+        super
+      end
+
+      private
+
+      def define_command(name, desc)
+        require_relative "commands/#{name}_command"
+
+        register Hack.const_get("#{name.capitalize}Command"), name, name, desc
+      end
     end
 
     define_command :slide,   "Creates a slide boilerplate code"
