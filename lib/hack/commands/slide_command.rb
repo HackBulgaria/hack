@@ -3,7 +3,7 @@ module Hack
     argument :name
 
     def copy_slim_templates
-      copy_file "name}/index.slim"
+      copy_file "index.slim", "#{name}/index.slim"
       copy_file "lecture.slim", "#{name}/lecture.slim"
     end
 
