@@ -15,9 +15,10 @@ module Hack
     def copy_stylesheets
       copy_file "css/reveal.css", "#{name}/css/reveal.css"
       copy_file "css/simple.css", "#{name}/css/simple.css"
+      copy_file "css/googlecode.css", "#{name}/css/googlecode.css"
     end
 
-    def copy_stylesheets
+    def copy_fonts
       copy_file "css/fonts/Fixedsys500c.eot", "#{name}/css/fonts/Fixedsys500c.eot"
       copy_file "css/fonts/Fixedsys500c.otf", "#{name}/css/fonts/Fixedsys500c.otf"
       copy_file "css/fonts/Fixedsys500c.svg", "#{name}/css/fonts/Fixedsys500c.svg"
